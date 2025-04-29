@@ -1,3 +1,60 @@
+/* Paperlogy Font Definitions */
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-1Thin.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-2ExtraLight.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-3Light.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-4Regular.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-5Medium.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-6SemiBold.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-7Bold.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-8ExtraBold.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('fonts/Paperlogy-9Black.ttf') format('truetype'); /* 실제 파일 이름으로 수정 */
+    font-weight: 900;
+    font-style: normal;
+}
+/* Italic 폰트 정의 제거 (파일 없음) */
+
 /* 기본 스타일 초기화 */
 body, h1, h2, h3, p, input, button {
     margin: 0;
@@ -6,7 +63,7 @@ body, h1, h2, h3, p, input, button {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Paperlogy', sans-serif; /* Paperlogy 폰트 적용, sans-serif 대체 */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -21,6 +78,14 @@ header {
     align-items: center; /* 세로 중앙 정렬 */
     justify-content: center; /* 가로 중앙 정렬 추가 */
     border-bottom: 1px solid #eee; /* 하단에 옅은 구분선 추가 */
+}
+
+/* 헤더 링크 스타일 */
+a.header-link {
+    display: flex; /* 내부 요소(이미지, 텍스트) 정렬 위해 */
+    align-items: center; /* 세로 중앙 정렬 */
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모(header)의 글자색 상속 */
 }
 
 header img {
@@ -44,9 +109,10 @@ main {
 .search-section input[type="search"] {
     flex-grow: 1;
     padding: 1rem 0.5rem; /* 위아래 padding 더 늘림 */
-    border: 1px solid #1f7043;
+    border: 2px solid #1f7043; /* 테두리 두께 2px로 변경 */
     border-radius: 4px; /* 모든 모서리를 둥글게 */
     font-size: 1rem; /* 글자 크기 조절 */
+    font-family: 'Paperlogy', sans-serif; /* 입력창 폰트 적용 */
 }
 
 /* 검색 버튼 스타일 제거 */
@@ -64,8 +130,8 @@ main {
     border-top: none; /* 검색창과의 경계선 제거 */
     border-radius: 0 0 4px 4px;
     z-index: 10; /* 다른 요소 위에 표시 */
-    max-height: 200px; /* 최대 높이 설정 (스크롤) */
-    overflow-y: auto; /* 내용 많으면 스크롤 */
+    /* max-height: 200px; /* 최대 높이 제한 제거 */ */
+    /* overflow-y: auto; /* 스크롤 제거 */ */
 }
 
 .dropdown-menu.active {
@@ -78,6 +144,7 @@ main {
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid #eee; /* 항목 구분선 */
+    font-family: 'Paperlogy', sans-serif; /* 드롭다운 폰트 적용 */
 }
 
 .dropdown-menu a:last-child {
@@ -173,6 +240,7 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: auto; /* 푸터를 하단에 고정 (main의 flex-grow와 함께 사용) */
+    font-family: 'Paperlogy', sans-serif; /* 푸터 폰트 적용 */
 }
 
 /* 반응형 스타일 (예시: 600px 이상 화면) */
@@ -185,4 +253,9 @@ footer {
         max-width: 800px; /* 데스크탑에서 최대 너비 제한 */
         margin: 0 auto; /* 가운데 정렬 */
     }
+}
+
+/* 제목 폰트 두께 */
+h1, h2, h3 {
+    font-weight: 700;
 } 

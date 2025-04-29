@@ -1,0 +1,6 @@
+
+1단계 : 이미지 basic.jpg, 엑셀 단축기 사용방법, url : https://tip.dokbun2.com/34
+2단계 : 이미지 if.jpg, IF함수 사용방법, url : https://tip.dokbun2.com/23
+3단계 : 이미지 pvtable.jpg, 피벗테이블 사용방법, url : https://tip.dokbun2.com/26
+4단계 : 이미지 vlookup.jpg, Vlookup함수 사용방법, url : https://tip.dokbun2.com/25
+5단계 : 이미지 xlookup.jpg, Xlookup함수 사용방법, url : https://tip.dokbun2.com/35
