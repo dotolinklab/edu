@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엑셀배움터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/img.jpg" alt="엑셀배움터 로고">
+        <h1>엑셀배움터</h1>
+        <!-- 네비게이션 메뉴 등 추가 가능 -->
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="search" id="search-input" placeholder="단계 선택 또는 내용 검색...">
+            <div class="dropdown-menu" id="step-dropdown">
+                <a href="#step-1" data-step-index="0">1단계 : 단축키 배우기</a>
+                <a href="#step-2" data-step-index="1">2단계 : 기본 함수 배우기</a>
+                <a href="#step-3" data-step-index="2">3단계 : 데이터 분석 기초</a>
+                <a href="#step-4" data-step-index="3">4단계 : 피벗 테이블 활용</a>
+                <a href="#step-5" data-step-index="4">5단계 : 매크로 자동화</a>
+            </div>
+        </section>
+
+        <section id="card-section">
+            <div class="step-container">
+                <!-- 1단계 -->
+                <div class="step active" id="step-1">
+                    <h2>1단계 : 단축키 배우기</h2>
+                    <article class="card">
+                        <img src="img/card-image-placeholder-1.jpg" alt="카드 이미지 예시 1" class="card-image">
+                        <h3>카드 제목 예시 (1단계)</h3>
+                        <div class="card-meta">
+                            <span>작성자: 관리자</span> | <span>날짜: 2024-07-29</span> | <span>#엑셀 #단축키</span>
+                        </div>
+                        <p>1단계 카드 내용 예시입니다. 이 영역은 나중에 어드민 페이지와 연동될 예정입니다.</p>
+                    </article>
+                </div>
+                <!-- 2단계 -->
+                <div class="step" id="step-2">
+                    <h2>2단계 : 기본 함수 배우기</h2>
+                    <article class="card">
+                        <img src="img/card-image-placeholder-2.jpg" alt="카드 이미지 예시 2" class="card-image">
+                        <h3>카드 제목 예시 (2단계)</h3>
+                        <div class="card-meta">
+                            <span>작성자: 관리자</span> | <span>날짜: 2024-07-30</span> | <span>#엑셀 #함수</span>
+                        </div>
+                        <p>2단계 카드 내용 예시입니다. 이 영역은 나중에 어드민 페이지와 연동될 예정입니다.</p>
+                    </article>
+                </div>
+                <!-- 3단계 -->
+                <div class="step" id="step-3">
+                    <h2>3단계 : 데이터 분석 기초</h2>
+                    <article class="card">
+                        <img src="img/card-image-placeholder-3.jpg" alt="카드 이미지 예시 3" class="card-image">
+                        <h3>카드 제목 예시 (3단계)</h3>
+                        <div class="card-meta">
+                            <span>작성자: 관리자</span> | <span>날짜: 2024-07-31</span> | <span>#엑셀 #데이터분석</span>
+                        </div>
+                        <p>3단계 카드 내용 예시입니다. 이 영역은 나중에 어드민 페이지와 연동될 예정입니다.</p>
+                    </article>
+                </div>
+                <!-- 4단계 -->
+                <div class="step" id="step-4">
+                    <h2>4단계 : 피벗 테이블 활용</h2>
+                    <article class="card">
+                        <img src="img/card-image-placeholder-4.jpg" alt="카드 이미지 예시 4" class="card-image">
+                        <h3>카드 제목 예시 (4단계)</h3>
+                        <div class="card-meta">
+                            <span>작성자: 관리자</span> | <span>날짜: 2024-08-01</span> | <span>#엑셀 #피벗테이블</span>
+                        </div>
+                        <p>4단계 카드 내용 예시입니다. 이 영역은 나중에 어드민 페이지와 연동될 예정입니다.</p>
+                    </article>
+                </div>
+                <!-- 5단계 -->
+                <div class="step" id="step-5">
+                    <h2>5단계 : 매크로 자동화</h2>
+                    <article class="card">
+                        <img src="img/card-image-placeholder-5.jpg" alt="카드 이미지 예시 5" class="card-image">
+                        <h3>카드 제목 예시 (5단계)</h3>
+                        <div class="card-meta">
+                            <span>작성자: 관리자</span> | <span>날짜: 2024-08-02</span> | <span>#엑셀 #매크로 #VBA</span>
+                        </div>
+                        <p>5단계 카드 내용 예시입니다. 이 영역은 나중에 어드민 페이지와 연동될 예정입니다.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="adsense-section">
+            <!-- Google AdSense 광고 코드 삽입 위치 -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3297361889610977"
+                 crossorigin="anonymous"></script>
+            <!-- 랜딩페이지 상단광고 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3297361889610977"
+                 data-ad-slot="1051740099"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 엑셀배움터. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
+</body>
+</html> 
